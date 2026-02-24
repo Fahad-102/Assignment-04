@@ -29,6 +29,7 @@ document.querySelectorAll(".cards").forEach(card => {
 
 const availableJobsEl = document.querySelector(".total-jobs");
 const noJobsBanner = document.querySelector(".no-jobs");
+availableJobsEl.innerText = `${document.querySelectorAll(".cards").length} Jobs`;
 
 function updateDashboard() {
     interviewBtnEl.innerText = interviewCount;
@@ -39,14 +40,11 @@ function updateAvailableJobs(tab = "All") {
     let count = 0;
 
     if(tab === "All") {
-        availableJobsEl.innerText = "";
+        count = document.querySelectorAll(".cards").length;
         noJobsBanner.style.display = "none";
-        return;
-    } 
-    else if(tab === "Interview") {
+    } else if(tab === "Interview") {
         count = interviewTabContainer.querySelectorAll(".cards").length;
-    } 
-    else if(tab === "Rejected") {
+    } else if(tab === "Rejected") {
         count = rejectedTabContainer.querySelectorAll(".cards").length;
     }
 
