@@ -32,4 +32,4 @@ Ans:
 
 Ans:    
     preventDefault() stops the browser’s default action.
-    stopPropagation() stops the
+    stopPropagation() stops the parent elements.
