@@ -22,3 +22,9 @@ Ans:
     Event Bubbling is when an event starts from the target element and moves upward to its parent elements.
     For example, if we click a button inside a div, the button event runs first, then the div event runs.
 
+4. What is Event Delegation in JavaScript? Why is it useful?
+
+Ans:
+    Event Delegation means adding an event listener to a parent element instead of  multiple child elements.
+    It is useful because it improves performance and works for dynamically added elements.
+
