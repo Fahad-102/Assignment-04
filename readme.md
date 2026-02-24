@@ -15,3 +15,10 @@ Ans:
     Finally, use appendChild() or append() to insert it into a parent element.
 
  event from moving to parent elements.
+
+ 3. What is Event Bubbling? And how does it work?
+
+Ans:
+    Event Bubbling is when an event starts from the target element and moves upward to its parent elements.
+    For example, if we click a button inside a div, the button event runs first, then the div event runs.
+
